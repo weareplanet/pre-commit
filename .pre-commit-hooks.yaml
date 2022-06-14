@@ -1,0 +1,6 @@
+- id: cue_fmt
+  name: CUE format
+  description: Format CUE configuration files
+  entry: hooks/cue_fmt.sh
+  language: script
+  files: (\.cue)$
