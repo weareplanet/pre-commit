@@ -4,3 +4,17 @@
   entry: hooks/cue_fmt.sh
   language: script
   files: (\.cue)$
+
+- id: terramate_fmt
+  name: Terramate format
+  description: Format terramate configuration files
+  entry: hooks/terramate_fmt.sh
+  language: script
+  files: (\.tm|\.tm.hcl)$
+
+- id: terramate_generate
+  name: Terramate generate
+  description: Generate terramate configuration files
+  entry: hooks/terramate_gen.sh
+  language: script
+  files: (\.tm|\.tm.hcl)$
